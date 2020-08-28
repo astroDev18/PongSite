@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Meta  -->
+    <meta charset="UTF-8" />
+    <title>PongMain</title>
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    
+	<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body id="header">
+    <!------------------- Navigation ----------------------->
+
+    <nav class="nav" id="nav-bar">
+      <div class="nav-menu flex-row">
+        <div class="nav-brand">
+          <a href="#header" class="text-gray">ASTRO_ARCADE</a>
+        </div>
+        <div class="toggle-collapse">
+          <div class="toggle-icons">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div>
+          <ul class="nav-items" >
+            <li>
+              <a class="nav-link" href="#header">Home</a>
+            </li>
+            <li>
+              <a  class="nav-link" href="#nav1">Features</a>
+            </li>
+            <li >
+              <a class="nav-link" href="#nav2">Coins</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#video">Trailer</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#nav4">Game</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#nav5">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-------------- end navigation ---------------->
+    <!-- ------------------------------- Main Site Section ------------------------>
+    <main>
+      <!--------------------- Site Title----------------------->
+      <section class="site-title" id="header">
+        <div class="site-background">
+          <h3>Astro Arcade Presents:</h3>
+          <h1>
+            <span style="color: rgb(49, 1, 50)">P</span>
+            <span style="color: rgb(47, 30, 85)">O</span>
+            <span style="color: rgb(67, 92, 0)">N</span>
+            <span style="color: rgb(47, 46, 47)">G</span>
+          </h1>
+          <a href="#nav4">
+          <button class="btn">Ready to play?</button>
+        </a>
+        </div>
+      </section>
+      <!-----------x---------- Site Title------------x----------->
+      <!--------------------------- Site Content -------------------->
+      <section class="sub-heading">
+        <div class="background">
+          <h2 id="nav1">Pong's Features</h2>
+          <div class="bxslider">
+            <div>
+              <img
+                id="header-img"
+                src="/images/retro.jpg"
+                title="Retro styled game"
+              />
+            </div>
+            <div>
+              <img src="/images/pong.jpg" title="Easy and Simple to play" />
+            </div>
+            <div>
+              <img
+                src="/images/pong-wallpaper-6.jpg"
+                title="Endless Replayability"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------X---------- Site Content ------------X---------->
+  
+      <section class="pricing" id="nav2">
+        <h1>Buy Coins To Play</h1>
+        <div class="wrapper">
+          <div class="single-price">
+            <h1>Noob</h1>
+            <div class="price">
+              <h2>$5</h2>
+            </div>
+            <div class="deals">
+              <h4>Includes:</h4>
+              <h4>5 Coins</h4>
+              <h4>Free replays</h4>
+              <h4>30 Minutes Play</h4>
+            </div>
+            <a href="#">Select</a>
+          </div>
+
+          <div class="single-price">
+            <h1>Skilled</h1>
+            <div class="price">
+              <h2>$10</h2>
+            </div>
+            <div class="deals">
+              <h4>Includes:</h4>
+              <h4>12 Coins</h4>
+              <h4>Free Replays</h4>
+              <h4>Two Hours Play</h4>
+            </div>
+            <a href="#">Select</a>
+          </div>
+
+          <div class="single-price">
+            <h1>Pro</h1>
+            <div class="price">
+              <h2>$20</h2>
+            </div>
+            <div class="deals">
+              <h4><strong>Best Deal</strong></h4>
+              <h4>25 Coins</h4>
+              <h4>Unlimited Replays</h4>
+              <h4>Unlimited Play</h4>
+            </div>
+            <a href="#">Select</a>
+          </div>
+        </div>
+      </section>
+      <!----------------X------------- Pricing ------------------X-------------->
+      <!---------------------- Video ------------------------------>
+      <section class="Video" >
+        <h1 id="game" style="text-align: center">Pong Trailer!</h1>
+        <div class="videoWrapper">
+          <!-- Copy & Pasted from YouTube -->
+          <iframe
+          id="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/fiShX2pTz9A"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            fitvids()
+          ></iframe>
+        </div>
+      </section>
+      <!---------X---------End Video ----------------X-------------->
+      <!---------------------- Game --------------------->
+      <section class="game" id="nav4">
+        <h2>Play Pong!</h2>
+        <div>
+          <canvas id="pong"></canvas>
+        </div>
+      </section>
+    </main>
+    <!-------------X----------- Game ------------------X------------------->
+<!------------------- Contact -------------------->
+<section class="s2">
+  <div class="main-container">
+    <a href=""></a>
+    <h3 style="text-align: center;">Get In Touch</h3>
+
+    <form id="form"  action=”mailto:isajaffarali@gmail.com” method=”POST”
+    enctype=”multipart/form-data”
+    name=”EmailForm”>
+      <a name="contact"></a>
+
+      <label>Name</label>
+      <input class="input-field" type="text" name="name"  placeholder="Enter your name">
+
+      <label>Subject</label>
+      <input class="input-field" type="text" name="subject" placeholder="Enter your subject">
+
+      <label>Email</label>
+      <input class="input-field" id="email" type="email" required name="email" placeholder="Enter your email">
+
+      <label>Message</label>
+      <textarea class="input-field" name="message" placeholder="Enter your message"></textarea>
+
+      <input id="submit" type="submit" value="Send">
+    </form>
+  </div>
+  </section> 
+
+<!---------X--------------- Contact -------------X----------->
+    <!------------------ Footer -------------------->
+    <!-- If you see a white line under the waves,
+this only appears on codepen!! -->
+
+	<footer id="nav5">
+		<div id="footer-desktop">
+			<div class="footer-wrap">
+				<div class="inner-wrap">
+					<div id="section_footer">
+						<div id="section_footer_logo">
+							<img id="content_footer_logo" src="/images/melogo.png">
+							<p id="content_footer_logotext">© 2020, astro_dev</p>
+						</div>
+						<div id="section_footer_links" style="margin: 45px 0">
+							<div class="section-content-links">
+								<p class="content-footer-title">Some of my other projects:</p>
+								<ul class="content-footer-list">
+									<a href="https://astrocte.netlify.app/" target="_blank">
+										<li class="content-footer-link" >Cage The Elephant Fan Site</li>
+									</a>
+									<a href="https://cooptris.netlify.app/" target="_blank">
+										<li class="content-footer-link" >Cooptris The Game</li>
+									</a>
+									<a href="https://astrosportfolio.netlify.app/" target="_blank">
+										<li class="content-footer-link" >My Portfolio</li>
+									</a>
+								</ul>
+              </div>
+              
+							<div class="section-content-links">
+								<p class="content-footer-title">You can reach me at:</p>
+								<ul class="content-footer-list">
+										<li class="content-footer-link2">isajaffarali@gmail.com</li>
+									</a>
+										<li class="content-footer-link2">astro_dev#9036 on Discord</li>
+									</a>
+								</ul>
+							</div>
+							<div class="section-content-links">
+								<p class="content-footer-title">Thanks for visiting!</p>
+								<ul class="content-footer-list">
+                  <a href="https://www.freecodecamp.org/astrodev" target="_blank">
+										<li class="content-footer-link">This site was made for FCC</li>
+									</a>
+									</a>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer-mobile">
+			<div class="footer-wrap">
+				<div class="inner-wrap" style="margin: 0 15px">
+					<div id="section_footer-m">
+						<div id="section_footer_logo" style="margin: 40px 0; width: 100%;">
+							<img id="content_footer_logo" src="https://via.placeholder.com/150x35">
+							<p id="content_footer_logotext">© 2020 astro_dev</p>
+						</div>
+						<div id="section_footer_links-m">
+							<div class="section-footer-linksplit">
+								<div class="section-content-links-m" style="margin-right: 7px;">
+									<p class="content-footer-title">Catagory 1</p>
+									<ul class="content-footer-list">
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+									</ul>
+								</div>
+								<div class="section-content-links-m" style="margin-left: 7px;">
+									<p class="content-footer-title">Catagory 2</p>
+									<ul class="content-footer-list">
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+									</ul>
+								</div>
+							</div>
+							<div class="section-footer-linksplit">
+								<div class="section-content-links-m" style="margin-right: 7px;">
+									<p class="content-footer-title">Catagory 3</p>
+									<ul class="content-footer-list">
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m shaking-animation">Warning</li>
+										</a>
+									</ul>
+								</div>
+								<div class="section-content-links-m" style="margin-left: 7px;">
+									<p class="content-footer-title">Catagory 4</p>
+									<ul class="content-footer-list">
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+										<a href="">
+											<li class="content-footer-link-m">Link</li>
+										</a>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <!------X------- Footer ---------x--------------->
+    <!-- Scripts -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="audio.js"></script>
+    <script src="pong.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
